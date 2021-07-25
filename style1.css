@@ -1,0 +1,101 @@
+* {
+    top: 100px;
+    right: 0px;
+    left: 40px;
+    box-sizing: border-box;
+
+}
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 3px solid blanchedalmond;
+    background-color: bisque;
+    
+
+}
+.menu-btn__burger {
+    width: 20px;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+    
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+   
+}
+ /* contenu du rideau */
+.overla {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 50px;
+    top: 146px;
+    background-color: pink;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+}
+.closebt {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    font-size: 25px;
+}
+.side {
+    background-color: rgb(115, 173, 115);
+    width: 3%;
+    font-size: 25px;   
+    position: fixed;
+    left: 0%;
+    height: auto;
+    min-height: 100%;
+    top: 146px; 
+    height: 100%; 
+    z-index: 2;
+
+} 
+.overla-content .content {
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    top: 0%;
+}
+.overla-content a {
+    /* width: 350px; */
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    background: rgb(161, 170, 172);   
+    text-align: center;
+}
+.content{
+    line-height: 3em;
+} 
+.element{
+    text-align: center;
+    line-height: 2em;
+} 

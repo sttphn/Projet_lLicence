@@ -1,0 +1,112 @@
+   /* création bouton */
+* {
+    top: 100px;
+    right: 0px;
+    box-sizing: border-box;
+
+}
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 3px solid blanchedalmond;
+    background-color: bisque;
+    
+
+}
+.menu-btn__burger {
+    width: 20px;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: black;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+    
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+   
+}
+   /* style appliqué sur le rideau et son contenu */
+.overlay {
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 146px;
+    background-color: orange;
+    overflow-x: hidden;
+    transition: 0.3s;
+    
+
+}
+.overlay-content {
+    position: relative;
+    top: 0.5%;
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 25px;
+
+
+}
+.overlay-content a {
+    width: 350px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    background: rgb(161, 170, 172);   
+}
+.sidebar ul li a:hover {
+    color: wheat;
+    background: whitesmoke;
+}
+
+ /* style appliqué au menu vertical */
+.links_name .name {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.overlay a {
+    
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    line-height: 60px;
+
+}
+/* les sous menu  */
+.sousMenu{
+    display: none;
+}
+nav {
+    position: absolute;
+    display: none;
+} 
